@@ -95,7 +95,7 @@ export default function Home() {
 
       <section id="hero">
         <div className="max-w-7xl h-[100vh] mx-auto flex flex-col justify-center md:flex-row">
-          <div className="flex flex-col justify-center space-y-3 md:flex-1 px-3">
+          <div className="flex flex-col justify-center space-y-3 md:flex-1 px-3 text-center md:text-left">
             <h1
               className="text-white text-base sm:text-xl"
               style={{ fontFamily: "Fira Code, monospace" }}
@@ -111,13 +111,13 @@ export default function Home() {
             <h1 className="text-white font-bold text-4xl sm:text-6xl">
               Ghady Youssef.
             </h1>
-            <p className="text-white text-base max-w-lg">
+            <p className="text-white text-base">
               Je suis un étudiant au Collège des Frères Mont La Salle, Aïn
               Saadé, âgé de 17 ans. J&apos;adore construire et créer des sites
               avec de nouvelles technologies.
             </p>
             <div className="flex justify-start items-center">
-              <button className="bg-[#FFD945] py-4 px-6 rounded-lg font-semibold">
+              <button className="bg-[#FFD945] py-4 px-6 rounded-lg font-semibold mx-auto md:mx-0">
                 Mon résumé
               </button>
             </div>
@@ -172,7 +172,7 @@ export default function Home() {
           Mon bénévolat
         </h1>
         <div className="flex flex-col lg:flex-row mx-auto lg:space-x-10 space-y-10 lg:space-y-0 items-center justify-center">
-          <div className="text-center text-white w-[400px]">
+          <div className="text-center text-white w-full lg:w-[400px]">
             <div className="px-16 lg:px-10 text-gray-700">
               <FontAwesomeIcon icon={faAmbulance} />
             </div>
@@ -182,7 +182,7 @@ export default function Home() {
               Croix Rouge Libanaise – Secteur Beit Mery
             </p>
           </div>
-          <div className="text-center text-white w-[400px]">
+          <div className="text-center text-white w-full lg:w-[400px]">
             <div className="px-16 lg:px-10 text-gray-700">
               <FontAwesomeIcon icon={faCampground} />
             </div>
