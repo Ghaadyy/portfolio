@@ -1,6 +1,6 @@
-import { useRef } from "react";
-import { useSpring, animated } from "react-spring";
-import { useIntersectionObserver } from "../hooks/IntersectionObserver";
+// import { useRef } from "react";
+// import { useSpring, animated } from "react-spring";
+// import { useIntersectionObserver } from "../hooks/IntersectionObserver";
 
 function GridItem({ data }) {
   // const triggerRef = useRef();

@@ -2,13 +2,11 @@
 import Head from "next/head";
 import { useState, useEffect } from "react";
 import GridItem from "./components/GridItem";
-import { myData } from "./util/Data";
+import { myData } from "../util/Data";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import Sphere from "./components/Sphere";
 import Image from "next/image";
-import Ambulance from "./icons/ambulance.svg";
-import Scout from "./icons/tent.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAmbulance,
@@ -16,7 +14,6 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import Link from "next/link";
 
 export default function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
