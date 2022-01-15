@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import { useState, useEffect } from "react";
-import GridItem from "./components/GridItem";
+import GridItem from "../components/GridItem";
 import { myData } from "../util/Data";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import Sphere from "./components/Sphere";
+import Sphere from "../components/Sphere";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

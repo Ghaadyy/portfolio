@@ -40,17 +40,17 @@ function GridItem({ data }) {
               </g>
             </svg>
           </div>
-          <h1 className="font-semibold mb-1">{data.title}</h1>
-          <p className="mb-4 text-white text-sm">{data.description}</p>
+          <h1 className="font-semibold mb-1">{data?.title}</h1>
+          <p className="mb-4 text-white text-sm">{data?.description}</p>
         </div>
         <div className="flex space-x-3">
-          {data.tech.map((item, i) => (
+          {data?.tech.map((item, i) => (
             <p
               style={{ fontFamily: "Fira Code, monospace" }}
               key={i}
               className="text-xs text-gray-500"
             >
-              {data.tech[i]}
+              {data?.tech[i]}
             </p>
           ))}
         </div>
