@@ -46,11 +46,12 @@ export default function Home() {
   return (
     <div className="transition-all duration-200 overflow-x-hidden">
       <Head>
-        <title>Ghady Youssef</title>
+        <title>Accueil // Ghady Youssef</title>
         <meta name="description" content="Ghady Youssef's Portfolio." />
-        <meta property="og:title" content="Social Media Preview Working?" />
+        <meta property="og:title" content="Accueil // Ghady Youssef" />
         <meta property="og:description" content="Ghady Youssef's Portfolio." />
-        <meta property="og:image" content="/og.png" />
+        <meta property="og:image" itemProp="image" content="/og.png" />
+        <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
