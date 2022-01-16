@@ -125,7 +125,7 @@ export default function Home() {
             </div>
           </div>
           <div
-            className="hidden lg:flex items-center justify-center"
+            className="hidden lg:flex items-center justify-center flex-1"
             style={{ fontFamily: "Fira Code, monospace" }}
           >
             <Cloud

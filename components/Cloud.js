@@ -126,12 +126,12 @@ const defaultState = {
     "you",
   ],
   maxSpeed: 7,
-  initialSpeed: 10,
+  initialSpeed: 32,
   initialDirection: 135,
-  keepRollingAfterMouseOut: true,
+  keepRollingAfterMouseOut: false,
   useContainerInlineStyles: true,
-  fullWidth: false,
-  fullHeight: false,
+  fullWidth: true,
+  fullHeight: true,
 };
 
 export default function TagSphere(props) {
@@ -268,27 +268,27 @@ export default function TagSphere(props) {
     <div
       className={props.className}
       ref={containerRef}
-      //   onMouseOver={() => {
-      //     setActive(() => true);
-      //     setFirstRender(() => false);
-      //     setLessSpeed(() => maxSpeed);
-      //   }}
-      //   onMouseOut={() => {
-      //     setActive(() => false);
-      //   }}
-      //   onMouseMove={handleMouseMove}
-      // onTouchStart={() => {
-      //   setActive(true);
-      //   setLessSpeed(() => maxSpeed);
-      //   setFirstRender(() => false);
-      // }}
-      //   onTouchMove={(e) => {
-      //     if (checkTouchCoordinates(e)) {
-      //       handleMouseMove(e.targetTouches[0]);
-      //     } else {
-      //       setActive(false);
-      //     }
-      //   }}
+      onMouseOver={() => {
+        setActive(() => true);
+        setFirstRender(() => false);
+        setLessSpeed(() => maxSpeed);
+      }}
+      onMouseOut={() => {
+        setActive(() => false);
+      }}
+      onMouseMove={handleMouseMove}
+      onTouchStart={() => {
+        setActive(true);
+        setLessSpeed(() => maxSpeed);
+        setFirstRender(() => false);
+      }}
+      onTouchMove={(e) => {
+        if (checkTouchCoordinates(e)) {
+          handleMouseMove(e.targetTouches[0]);
+        } else {
+          setActive(false);
+        }
+      }}
       style={
         useContainerInlineStyles
           ? style || defaultStyles.getContainer(radius, fullWidth, fullHeight)
