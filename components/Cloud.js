@@ -9,7 +9,7 @@ const defaultStyles = {
     maxWidth: "100%",
     minHeight: `${2 * radius}px`,
     height: fullHeight ? "100%" : `${2 * radius}px`,
-    // touchAction: "none",
+    touchAction: "none",
   }),
 };
 

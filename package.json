@@ -16,6 +16,7 @@
     "@react-three/fiber": "^7.0.24",
     "@svgr/webpack": "^6.2.0",
     "next": "12.0.7",
+    "random-words": "^1.1.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-spring": "^9.4.2",

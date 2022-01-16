@@ -1,12 +1,14 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
-import { useState, useEffect, lazy, Suspense } from "react";
+import { useState, useEffect } from "react";
 import GridItem from "../components/GridItem";
 import { myData } from "../util/Data";
 // import { Canvas } from "@react-three/fiber";
 // import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 // import Sphere from "../components/Sphere";
+import { Canvas } from "@react-three/fiber";
+import { TrackballControls } from "@react-three/drei";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -16,6 +18,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import Cloud from "../components/Cloud";
+import SphereCloud from "../components/SphereCloud";
 
 export default function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -124,7 +127,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div
+          {/* <div
             className="hidden lg:flex items-center justify-center flex-1"
             style={{ fontFamily: "Fira Code, monospace" }}
           >
@@ -150,11 +153,18 @@ export default function Home() {
                 "Firebase",
               ]}
             />
+          </div> */}
+          <div className="flex-1 font-bold">
+            <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 35], fov: 90 }}>
+              <fog attach="fog" args={["#202025", 0, 80]} />
+              <SphereCloud />
+              <TrackballControls cursorZoom={false} />
+            </Canvas>
           </div>
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <div
           className="lg:hidden"
           style={{ fontFamily: "Fira Code, monospace" }}
@@ -182,7 +192,7 @@ export default function Home() {
             ]}
           />
         </div>
-      </section>
+      </section> */}
 
       <section id="experience" className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center justify-center my-28">
