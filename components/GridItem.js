@@ -1,23 +1,6 @@
-// import { useRef } from "react";
-// import { useSpring, animated } from "react-spring";
-// import { useIntersectionObserver } from "../hooks/IntersectionObserver";
-
 function GridItem({ data }) {
-  // const triggerRef = useRef();
-  // const dataRef = useIntersectionObserver(triggerRef, {
-  //   freezeOnceVisible: true,
-  // });
-  // const config = useSpring({
-  //   to: {
-  //     y: dataRef?.isIntersecting ? 0 : 20,
-  //   },
-  //   from: { y: 20 },
-  //   delay: 10,
-  // });
-
   return (
     <>
-      {/* <animated.div style={config}> */}
       <div className="flex flex-col justify-between bg-[#1B1D29] rounded-md m-2 px-4 py-3 shadow-lg transition-all duration-[250ms] ease-in-out hover:-translate-y-1 text-white hover:text-[#FFD945]">
         <div>
           <div className="mb-4">
@@ -55,7 +38,6 @@ function GridItem({ data }) {
           ))}
         </div>
       </div>
-      {/* </animated.div> */}
     </>
   );
 }

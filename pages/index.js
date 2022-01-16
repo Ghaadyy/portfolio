@@ -4,11 +4,6 @@ import Head from "next/head";
 import { useState, useEffect } from "react";
 import GridItem from "../components/GridItem";
 import { myData } from "../util/Data";
-// import { Canvas } from "@react-three/fiber";
-// import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
-// import Sphere from "../components/Sphere";
-import { Canvas } from "@react-three/fiber";
-import { TrackballControls } from "@react-three/drei";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -18,7 +13,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import Cloud from "../components/Cloud";
-import SphereCloud from "../components/SphereCloud";
 
 export default function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -127,14 +121,14 @@ export default function Home() {
               </button>
             </div>
           </div>
-          {/* <div
+          <div
             className="hidden lg:flex items-center justify-center flex-1"
             style={{ fontFamily: "Fira Code, monospace" }}
           >
             <Cloud
               radius={300}
               maxSpeed={10}
-              className="text-white font-bold text-2xl"
+              className="text-white font-bold text-2xl transition-all duration-200 hover:text-[#FFD945]"
               texts={[
                 "HTML",
                 "CSS",
@@ -151,48 +145,12 @@ export default function Home() {
                 "Adobe XD",
                 "Tailwind CSS",
                 "Firebase",
+                "NextJS",
               ]}
             />
-          </div> */}
-          <div className="flex-1 font-bold">
-            <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 35], fov: 90 }}>
-              <fog attach="fog" args={["#202025", 0, 80]} />
-              <SphereCloud />
-              <TrackballControls cursorZoom={false} />
-            </Canvas>
           </div>
         </div>
       </section>
-
-      {/* <section>
-        <div
-          className="lg:hidden"
-          style={{ fontFamily: "Fira Code, monospace" }}
-        >
-          <Cloud
-            radius={200}
-            maxSpeed={10}
-            className="text-white font-bold text-2xl mx-auto"
-            texts={[
-              "HTML",
-              "CSS",
-              "JavaScript",
-              "ReactJS",
-              "React Native",
-              "Flutter",
-              "Python",
-              "MongoDB",
-              "NodeJS",
-              "ExpressJS",
-              "Git",
-              "VS Code",
-              "Adobe XD",
-              "Tailwind CSS",
-              "Firebase",
-            ]}
-          />
-        </div>
-      </section> */}
 
       <section id="experience" className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center justify-center my-28">
@@ -253,38 +211,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* <section>
-        <div className="h-[400px]">
-          <Canvas>
-            <Suspense fallback={null}>
-              <PerspectiveCamera />
-              <OrbitControls enableZoom={false} enablePan={false} />
-              <spotLight
-                intensity={0.5}
-                position={[50, 0, -50]}
-                penumbra={1}
-                color="yellow"
-              />
-              <spotLight
-                intensity={0.5}
-                position={[200, 0, -75]}
-                penumbra={1}
-                color="yellow"
-              />
-              <spotLight
-                intensity={0.5}
-                position={[-200, -200, -100]}
-                penumbra={1}
-                color="yellow"
-              />
-              <ambientLight intensity={1} />
-              <directionalLight position={[0, 1, 1]} intensity={1} />
-              <Sphere />
-            </Suspense>
-          </Canvas>
-        </div>
-      </section> */}
 
       <footer className="grid grid-cols-1 space-y-4 md:space-y-0 md:grid-cols-3 py-6 px-5">
         <div></div>

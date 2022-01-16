@@ -10,6 +10,7 @@ const defaultStyles = {
     minHeight: `${2 * radius}px`,
     height: fullHeight ? "100%" : `${2 * radius}px`,
     touchAction: "none",
+    zIndex: "0",
   }),
 };
 
@@ -125,7 +126,7 @@ const defaultState = {
     "see",
     "you",
   ],
-  maxSpeed: 7,
+  maxSpeed: 5,
   initialSpeed: 32,
   initialDirection: 135,
   keepRollingAfterMouseOut: false,
