@@ -4,9 +4,9 @@ import Head from "next/head";
 import { useState, useEffect, lazy, Suspense } from "react";
 import GridItem from "../components/GridItem";
 import { myData } from "../util/Data";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
-import Sphere from "../components/Sphere";
+// import { Canvas } from "@react-three/fiber";
+// import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
+// import Sphere from "../components/Sphere";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -244,7 +244,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <div className="h-[400px]">
           <Canvas>
             <Suspense fallback={null}>
@@ -274,7 +274,7 @@ export default function Home() {
             </Suspense>
           </Canvas>
         </div>
-      </section>
+      </section> */}
 
       <footer className="grid grid-cols-1 space-y-4 md:space-y-0 md:grid-cols-3 py-6 px-5">
         <div></div>
