@@ -1,10 +1,11 @@
+/* eslint-disable react/jsx-key */
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
-import { useState, useEffect } from "react";
+import { useState, useEffect, lazy, Suspense } from "react";
 import GridItem from "../components/GridItem";
 import { myData } from "../util/Data";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import Sphere from "../components/Sphere";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,6 +15,7 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import Cloud from "../components/Cloud";
 
 export default function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -122,23 +124,72 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="hidden lg:flex items-center justify-center flex-1">
-            <Canvas>
-              <OrbitControls enableZoom={false} />
-              <ambientLight intensity={0.5} />
-              <directionalLight position={[-2, 5, 2]} intensity={1} />
-              <Sphere />
-            </Canvas>
+          <div
+            className="hidden lg:flex items-center justify-center"
+            style={{ fontFamily: "Fira Code, monospace" }}
+          >
+            <Cloud
+              radius={300}
+              maxSpeed={10}
+              className="text-white font-bold text-2xl"
+              texts={[
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "ReactJS",
+                "React Native",
+                "Flutter",
+                "Python",
+                "MongoDB",
+                "NodeJS",
+                "ExpressJS",
+                "Git",
+                "VS Code",
+                "Adobe XD",
+                "Tailwind CSS",
+                "Firebase",
+              ]}
+            />
           </div>
         </div>
       </section>
 
+      <section>
+        <div
+          className="lg:hidden"
+          style={{ fontFamily: "Fira Code, monospace" }}
+        >
+          <Cloud
+            radius={200}
+            maxSpeed={10}
+            className="text-white font-bold text-2xl mx-auto"
+            texts={[
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "ReactJS",
+              "React Native",
+              "Flutter",
+              "Python",
+              "MongoDB",
+              "NodeJS",
+              "ExpressJS",
+              "Git",
+              "VS Code",
+              "Adobe XD",
+              "Tailwind CSS",
+              "Firebase",
+            ]}
+          />
+        </div>
+      </section>
+
       <section id="experience" className="max-w-7xl mx-auto">
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center my-28">
           <h1 className="text-white font-bold text-center text-3xl">
             Mon expérience dans le numérique
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {myData.map((item, idx) => {
               return <GridItem data={item} key={idx} />;
             })}
@@ -146,7 +197,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="photo" className="px-3 my-6">
+      <section id="photo" className="px-3 my-28">
         <h1 className="text-white font-bold text-center text-3xl">
           La photographie 📷
         </h1>
@@ -167,13 +218,13 @@ export default function Home() {
         </p>
       </section>
 
-      <section id="benevolat" className="flex flex-col mt-10 mb-5">
+      <section id="benevolat" className="flex flex-col my-28">
         <h1 className="text-white font-bold text-center text-3xl mb-6">
           Mon bénévolat
         </h1>
         <div className="flex flex-col lg:flex-row mx-auto lg:space-x-10 space-y-10 lg:space-y-0 items-center justify-center">
           <div className="text-center text-white w-full lg:w-[400px]">
-            <div className="px-16 lg:px-10 text-gray-700">
+            <div className="px-16 lg:px-10 text-[#292B31]">
               <FontAwesomeIcon icon={faAmbulance} />
             </div>
             <br />
@@ -183,13 +234,45 @@ export default function Home() {
             </p>
           </div>
           <div className="text-center text-white w-full lg:w-[400px]">
-            <div className="px-16 lg:px-10 text-gray-700">
+            <div className="px-16 lg:px-10 text-[#292B31]">
               <FontAwesomeIcon icon={faCampground} />
             </div>
             <br />
             <h1>Scout du Liban</h1>
             <p className="text-sm text-gray-500">Groupe Mont La Salle</p>
           </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="h-[400px]">
+          <Canvas>
+            <Suspense fallback={null}>
+              <PerspectiveCamera />
+              <OrbitControls enableZoom={false} enablePan={false} />
+              <spotLight
+                intensity={0.5}
+                position={[50, 0, -50]}
+                penumbra={1}
+                color="yellow"
+              />
+              <spotLight
+                intensity={0.5}
+                position={[200, 0, -75]}
+                penumbra={1}
+                color="yellow"
+              />
+              <spotLight
+                intensity={0.5}
+                position={[-200, -200, -100]}
+                penumbra={1}
+                color="yellow"
+              />
+              <ambientLight intensity={1} />
+              <directionalLight position={[0, 1, 1]} intensity={1} />
+              <Sphere />
+            </Suspense>
+          </Canvas>
         </div>
       </section>
 
@@ -215,8 +298,8 @@ export default function Home() {
             className="transition-all duration-200 hover:text-[#FFD945] hover:-translate-x-1 flex space-x-4"
           >
             <p>ghadyyi@gmail.com</p>
-            <FontAwesomeIcon icon={faEnvelope} className="w-[26px]" />
           </div>
+          <FontAwesomeIcon icon={faEnvelope} className="w-[26px]" />
           <a href="https://www.instagram.com/ghaadyy/">
             <FontAwesomeIcon
               icon={faInstagram}

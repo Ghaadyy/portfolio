@@ -1,22 +1,25 @@
+// import { lazy } from "react";
 import {
   MeshDistortMaterial,
-  MeshWobbleMaterial,
   Sphere,
+  MeshReflectorMaterial,
 } from "@react-three/drei";
-
+// import { useLoader } from "@react-three/fiber";
+import * as THREE from "three";
 export default function CustomSphere() {
+  const TextLoader = new THREE.TextureLoader();
+  const colorMap = TextLoader.load("/sphere.png");
+  colorMap.wrapS = colorMap.wrapT = THREE.MirroredRepeatWrapping;
   return (
-    // <mesh>
-    <Sphere visible args={[1, 100, 200]} scale={2}>
+    <Sphere visible args={[1, 200, 200]} scale={2.5}>
       <MeshDistortMaterial
-        color="#81F900"
+        color="#FFD945"
         attach="material"
-        distort={0.4}
+        distort={0.5}
         speed={1.5}
-        roughness={1}
+        roughness={0.75}
+        map={colorMap}
       />
-      {/* <meshDepthMaterial attach="material" color="blue" /> */}
     </Sphere>
-    // </mesh>
   );
 }
