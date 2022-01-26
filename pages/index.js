@@ -116,11 +116,11 @@ export default function Home() {
               web avec de nouvelles technologies.
             </p>
             <div className="flex justify-start items-center">
-              <button className="bg-[#FFD945] py-4 px-6 rounded-lg font-semibold mx-auto md:mx-0">
-                <a href="/static/CV.pdf" download="CV.pdf">
+              <a href="/static/CV.pdf" download="CV.pdf">
+                <button className="bg-[#FFD945] py-4 px-6 rounded-lg font-semibold mx-auto md:mx-0">
                   Mon résumé
-                </a>
-              </button>
+                </button>
+              </a>
             </div>
           </div>
           <div
