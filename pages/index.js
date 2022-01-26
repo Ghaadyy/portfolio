@@ -45,10 +45,10 @@ export default function Home() {
   return (
     <div className="transition-all duration-200 overflow-x-hidden">
       <Head>
-        <title>Accueil // Ghady Youssef</title>
-        <meta name="description" content="Ghady Youssef's Portfolio." />
-        <meta property="og:title" content="Accueil // Ghady Youssef" />
-        <meta property="og:description" content="Ghady Youssef's Portfolio." />
+        <title>Ghady Youssef</title>
+        <meta name="description" content="Découvrez mon portfolio!" />
+        <meta property="og:title" content="Ghady Youssef" />
+        <meta property="og:description" content="Découvrez mon portfolio!" />
         <meta property="og:image" itemProp="image" content="/og.png" />
         <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
@@ -84,7 +84,7 @@ export default function Home() {
             /Intérêts
           </a>
           <a
-            href="#benevolat"
+            href="#bénévolats"
             className="text-white cursor-pointer transition-all duration-200 hover:text-[#FFD945] hover:-translate-x-1"
           >
             /Bénévolats
@@ -113,11 +113,13 @@ export default function Home() {
             <p className="text-white text-base">
               Je suis un étudiant au Collège des Frères Mont La Salle, Aïn
               Saadé, âgé de 17 ans. J&apos;adore construire et créer des sites
-              avec de nouvelles technologies.
+              web avec de nouvelles technologies.
             </p>
             <div className="flex justify-start items-center">
               <button className="bg-[#FFD945] py-4 px-6 rounded-lg font-semibold mx-auto md:mx-0">
-                Mon résumé
+                <a href="/static/CV.pdf" download="CV.pdf">
+                  Mon résumé
+                </a>
               </button>
             </div>
           </div>
@@ -171,7 +173,8 @@ export default function Home() {
         </h1>
         <div className="relative max-h-[300px] sm:max-h-[400px] md:max-h-[none] h-[600px] max-w-5xl mx-auto my-6 shadow-xl transition-transform duration-[250ms] ease-in-out hover:scale-105">
           <Image
-            src="/IMG_0368.jpg"
+            priority={true}
+            src="/static/IMG_0368.jpg"
             alt=""
             layout="fill"
             objectFit="cover"
@@ -186,9 +189,9 @@ export default function Home() {
         </p>
       </section>
 
-      <section id="benevolat" className="flex flex-col my-28">
+      <section id="bénévolats" className="flex flex-col my-28">
         <h1 className="text-white font-bold text-center text-3xl mb-6">
-          Mon bénévolat
+          Bénévolats
         </h1>
         <div className="flex flex-col lg:flex-row mx-auto lg:space-x-10 space-y-10 lg:space-y-0 items-center justify-center">
           <div className="text-center text-white w-full lg:w-[400px]">

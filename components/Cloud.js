@@ -127,7 +127,7 @@ const defaultState = {
     "you",
   ],
   maxSpeed: 5,
-  initialSpeed: 32,
+  initialSpeed: 2,
   initialDirection: 135,
   keepRollingAfterMouseOut: false,
   useContainerInlineStyles: true,
