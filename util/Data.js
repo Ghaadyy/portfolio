@@ -2,7 +2,7 @@ export const myData = [
   {
     title: "CS50x Course — Harvard",
     description:
-      "Un cours qui introduit les notions essentiels à l'informatique. De la base de programmation au structures de donnés, algorithmes, etc.",
+      "Un cours qui introduit les notions essentiels à l'informatique. De la base de programmation aux structures de donnés, algorithmes, etc.",
     tech: ["C", "Python", "SQL", "HTML", "JavaScript"],
   },
   {
@@ -32,7 +32,7 @@ export const myData = [
   {
     title: "Python Summer Camp — Lebanese American University",
     description:
-      "Un atelier d'une semaine qui ma apprit les bases de python et comment créer des GUI pour établir des applications PC.",
+      "Un atelier d'une semaine qui m'a apprit les bases de python et comment créer des GUI pour établir des applications PC.",
     tech: ["Python"],
   },
   {
@@ -44,7 +44,7 @@ export const myData = [
   {
     title: "Zoey — The Book Exchange App",
     description:
-      "UIX Designer, développeur de frontend dans React Native avec deux collègues. Un projet qui a pour but d'aider l'échange de livres scolaires et extra-scolaires dans les conditions économiques difficiles.",
+      "UIX Designer, développeur de frontend dans React Native avec deux collègues. Un projet qui a pour but d'aider l'échange de livres scolaires et extra-scolaires dans les conditions économiques difficiles du Liban.",
     tech: ["React Native", "MongoDB"],
   },
 ];

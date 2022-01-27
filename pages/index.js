@@ -182,10 +182,9 @@ export default function Home() {
           />
         </div>
         <p className="max-w-5xl mx-auto text-center text-white">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          La photographie est une de mes passions, prendre en photo des moments
+          inoubliable de ma vie et d&apos;exprimer ma créativité à l&apos;aide
+          de ma 📷.
         </p>
       </section>
 
