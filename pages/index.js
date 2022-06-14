@@ -46,11 +46,14 @@ export default function Home() {
     <div className="transition-all duration-200 overflow-x-hidden">
       <Head>
         <title>Ghady Youssef</title>
-        <meta name="msapplication-TileImage" content="/og.png" />
+        <meta
+          name="msapplication-TileImage"
+          content="https://ghady.vercel.app/og.png"
+        />
         <meta property="og:site_name" content="Ghady Youssef" />
         <meta property="og:title" content="Ghady Youssef" />
         <meta property="og:description" content="Check out my portfolio!" />
-        <meta property="og:image" content="/og.png" />
+        <meta property="og:image" content="https://ghady.vercel.app/og.png" />
         <meta property="og:type" content="website" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="300" />
