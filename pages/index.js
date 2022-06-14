@@ -49,7 +49,7 @@ export default function Home() {
         <meta name="description" content="Découvrez mon portfolio!" />
         <meta property="og:title" content="Ghady Youssef" />
         <meta property="og:description" content="Découvrez mon portfolio!" />
-        <meta property="og:image" itemProp="image" content="/og.png" />
+        <meta property="og:image" content="/og.png" key="ogimage" />
         <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -75,19 +75,19 @@ export default function Home() {
             href="#experience"
             className="text-white cursor-pointer transition-all duration-200 hover:text-[#FFD945] hover:-translate-x-1"
           >
-            /Expérience
+            /Experience
           </a>
           <a
             href="#photo"
             className="text-white cursor-pointer transition-all duration-200 hover:text-[#FFD945] hover:-translate-x-1"
           >
-            /Intérêts
+            /Photography
           </a>
           <a
-            href="#bénévolats"
+            href="#volunteering"
             className="text-white cursor-pointer transition-all duration-200 hover:text-[#FFD945] hover:-translate-x-1"
           >
-            /Bénévolats
+            /Volunteering
           </a>
         </nav>
       </header>
@@ -103,7 +103,7 @@ export default function Home() {
               <span style={{ color: "#81F900" }}>log</span>
               <span style={{ color: "#DA70D6" }}>(</span>
               <span style={{ color: "#FFD945" }}>
-                &quot;Bonjour, je m&apos;appelle&quot;
+                &quot;Hello, my name is&quot;
               </span>
               <span style={{ color: "#DA70D6" }}>)</span>;
             </h1>
@@ -111,14 +111,13 @@ export default function Home() {
               Ghady Youssef.
             </h1>
             <p className="text-white text-base">
-              Je suis un étudiant au Collège des Frères Mont La Salle, Aïn
-              Saadé, âgé de 17 ans. J&apos;adore construire et créer des sites
-              web avec de nouvelles technologies.
+              I am a computer science student, 17 years old. I love to build and
+              create sites web with new technologies.
             </p>
             <div className="flex justify-start items-center">
               <a href="/static/CV.pdf" download="CV.pdf">
                 <button className="bg-[#FFD945] py-4 px-6 rounded-lg font-semibold mx-auto md:mx-0">
-                  Mon résumé
+                  My CV
                 </button>
               </a>
             </div>
@@ -157,7 +156,7 @@ export default function Home() {
       <section id="experience" className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center justify-center my-28">
           <h1 className="text-white font-bold text-center text-3xl">
-            Mon expérience dans le numérique
+            My experience
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {myData.map((item, idx) => {
@@ -169,7 +168,7 @@ export default function Home() {
 
       <section id="photo" className="px-3 my-28">
         <h1 className="text-white font-bold text-center text-3xl">
-          La photographie 📷
+          Photography 📷
         </h1>
         <div className="relative max-h-[300px] sm:max-h-[400px] md:max-h-[none] h-[600px] max-w-5xl mx-auto my-6 shadow-xl transition-transform duration-[250ms] ease-in-out hover:scale-105">
           <Image
@@ -182,15 +181,14 @@ export default function Home() {
           />
         </div>
         <p className="max-w-5xl mx-auto text-center text-white">
-          La photographie est une de mes passions, prendre en photo des moments
-          inoubliable de ma vie et d&apos;exprimer ma créativité à l&apos;aide
-          de ma 📷.
+          Photography is one of my passions, taking pictures of unforgettable
+          moments of my life using of my 📷.
         </p>
       </section>
 
-      <section id="bénévolats" className="flex flex-col my-28">
+      <section id="volunteering" className="flex flex-col my-28">
         <h1 className="text-white font-bold text-center text-3xl mb-6">
-          Bénévolats
+          Volunteering
         </h1>
         <div className="flex flex-col lg:flex-row mx-auto lg:space-x-10 space-y-10 lg:space-y-0 items-center justify-center">
           <div className="text-center text-white w-full lg:w-[400px]">
@@ -198,9 +196,9 @@ export default function Home() {
               <FontAwesomeIcon icon={faAmbulance} />
             </div>
             <br />
-            <h1>Technicien médical des services d&apos;urgence</h1>
+            <h1>Emergency Medical Technician</h1>
             <p className="text-sm text-gray-500">
-              Croix Rouge Libanaise – Secteur Beit Mery
+              Lebanese Red Cross – Beit Mery sector
             </p>
           </div>
           <div className="text-center text-white w-full lg:w-[400px]">
@@ -208,8 +206,8 @@ export default function Home() {
               <FontAwesomeIcon icon={faCampground} />
             </div>
             <br />
-            <h1>Scout du Liban</h1>
-            <p className="text-sm text-gray-500">Groupe Mont La Salle</p>
+            <h1>Scout of Lebanon</h1>
+            <p className="text-sm text-gray-500">Mont La Salle Group</p>
           </div>
         </div>
       </section>
@@ -221,12 +219,12 @@ export default function Home() {
             className="text-white text-center text-sm"
             style={{ fontFamily: "Fira Code, monospace" }}
           >
-            Construit avec ❤️ par Ghady Youssef <br />
+            Built with ❤️ by Ghady Youssef <br />
             <span
               className="text-gray-600"
               style={{ fontFamily: "Fira Code, monospace" }}
             >
-              &copy; 2022
+              All rights reserved. &copy; 2022
             </span>
           </h1>
         </div>
