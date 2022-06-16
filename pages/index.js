@@ -47,6 +47,16 @@ export default function Home() {
       <Head>
         <title>Ghady Youssef</title>
         <meta
+          name="description"
+          content="I am a computer science student, 17 years old. I love to build and
+              create things with technology. Check out my portfolio!"
+        />
+        <meta
+          name="keywords"
+          content="HTML, CSS, JavaScript, Ghady, Youssef, Ghady Youssef, Ghadi, Youssef, Ghadi Youssef"
+        />
+        <meta name="author" content="Ghady Youssef" />
+        <meta
           name="msapplication-TileImage"
           content="https://ghady.vercel.app/og.png"
         />
