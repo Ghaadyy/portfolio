@@ -83,24 +83,27 @@ export default function Home() {
             href="#experience"
             className="text-white cursor-pointer transition-all duration-200 hover:text-[#FFD945] hover:-translate-x-1"
           >
-            /Experience
+            &lt;Experience/&gt;
           </a>
           <a
             href="#photo"
             className="text-white cursor-pointer transition-all duration-200 hover:text-[#FFD945] hover:-translate-x-1"
           >
-            /Photography
+            &lt;Photography/&gt;
           </a>
           <a
             href="#volunteering"
             className="text-white cursor-pointer transition-all duration-200 hover:text-[#FFD945] hover:-translate-x-1"
           >
-            /Volunteering
+            &lt;Volunteering/&gt;
           </a>
         </nav>
       </header>
 
       <section id="hero">
+        {/* <div className="w-[100px] h-[100px]">
+         
+        </div> */}
         <div className="max-w-7xl h-[100vh] mx-auto flex flex-col justify-center md:flex-row">
           <div className="flex flex-col justify-center space-y-3 md:flex-1 px-3 text-center md:text-left">
             <h1
@@ -120,12 +123,12 @@ export default function Home() {
             </h1>
             <p className="text-white text-base">
               I am a computer science student, 17 years old. I love to build and
-              create sites web with new technologies.
+              create things with technology.
             </p>
-            <div className="flex justify-start items-center">
+            <div className="flex justify-start items-center mx-auto md:mx-0">
               <a href="/static/CV.pdf" download="CV.pdf">
                 <button className="bg-[#FFD945] py-4 px-6 rounded-lg font-semibold mx-auto md:mx-0">
-                  My CV
+                  My CV (in French)
                 </button>
               </a>
             </div>
@@ -189,8 +192,8 @@ export default function Home() {
           />
         </div>
         <p className="max-w-5xl mx-auto text-center text-white">
-          Photography is one of my passions, taking pictures of unforgettable
-          moments of my life using of my 📷.
+          Photography is one of my passions, I enjoy taking pictures of
+          unforgettable moments in my life using my 📷.
         </p>
       </section>
 
