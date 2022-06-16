@@ -55,6 +55,10 @@ export default function Home() {
           name="keywords"
           content="HTML, CSS, JavaScript, Ghady, Youssef, Ghady Youssef, Ghadi, Youssef, Ghadi Youssef"
         />
+        <meta
+          name="google-site-verification"
+          content="p81dArDKwP9CT2KTqKrueh_OlYWZVvaSqLMXvUV1SQM"
+        />
         <meta name="author" content="Ghady Youssef" />
         <meta
           name="msapplication-TileImage"
