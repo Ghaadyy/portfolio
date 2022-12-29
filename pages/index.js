@@ -115,9 +115,6 @@ export default function Home() {
       </header>
 
       <section id="hero">
-        {/* <div className="w-[100px] h-[100px]">
-         
-        </div> */}
         <div className="max-w-7xl h-[100vh] mx-auto flex flex-col justify-center md:flex-row">
           <div className="flex flex-col justify-center space-y-3 md:flex-1 px-3 text-center md:text-left">
             <h1
@@ -136,15 +133,13 @@ export default function Home() {
               Ghady Youssef.
             </h1>
             <p className="text-white text-base">
-              I am a computer science student, 17 years old. I love to build and
+              I am a computer science student, 18 years old. I love to build and
               create things with technology.
             </p>
             <div className="flex justify-start items-center mx-auto md:mx-0">
-              <a href="/static/CV.pdf" download="CV.pdf">
-                <button className="bg-[#FFD945] py-4 px-6 rounded-lg font-semibold mx-auto md:mx-0">
-                  My CV (in French)
-                </button>
-              </a>
+              <button className="bg-[#FFD945] py-4 px-6 rounded-lg font-semibold mx-auto md:mx-0">
+                Download my CV
+              </button>
             </div>
           </div>
           <div
