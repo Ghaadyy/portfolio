@@ -62,17 +62,17 @@ export default function Home() {
         <meta name="author" content="Ghady Youssef" />
         <meta
           name="msapplication-TileImage"
-          content="https://ghady.vercel.app/og.png"
+          content="https://v1.ghady.me/og.png"
         />
         <meta property="og:site_name" content="Ghady Youssef" />
         <meta property="og:title" content="Ghady Youssef" />
         <meta property="og:description" content="Check out my portfolio!" />
-        <meta property="og:image" content="https://ghady.vercel.app/og.png" />
+        <meta property="og:image" content="https://v1.ghady.me/og.png" />
         <meta property="og:type" content="website" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="300" />
         <meta property="og:image:height" content="300" />
-        <meta property="og:url" content="https://ghady.vercel.app/" />
+        <meta property="og:url" content="https://v1.ghady.me/" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
